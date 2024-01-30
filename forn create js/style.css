@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+   background-image: url("1.jpg");
+   background-size: cover;
+   position: relative;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: gainsboro;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 40px;
+}
+.form-box span{
+    color: coral;
+}
+.form-box h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #3c00d0;
+    position: relative;
+}
+.form-box h1::after{
+    content:"";
+    width: 30px;
+    background: #3c00d0;
+    position: absolute;
+    transform: translate(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0px;
+    border: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 10px;
+    color:mediumslateblue;
+    transition: 0.7s ease-in-out;
+}
+.input-field i:hover{
+ color: red;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 40%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: auto;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-position: under;
+    transition: 0.7s ease-in-out;
+
+}
+.input-group{
+    height: 280px;
+    font-size: 18px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+#title{
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+.btn-field button:hover{
+color: coral;
+}
+p{
+    font-weight: bold;
+    margin: 10px 80px;
+    font-style: italic;
+}
+p a{
+  color: #3c00d0;
+}
